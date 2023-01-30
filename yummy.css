@@ -1,0 +1,521 @@
+/* the font */
+@import url('https://fonts.cdnfonts.com/css/neutral-face');
+
+@font-face {
+    font-family: neutralFaceBold;
+    src: url(neutralface-bold-webfont.woff);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #161916;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* text */
+
+h1 {
+    font-family: neutralFaceBold;
+    font-weight: 400;
+    font-style: normal;
+    /* font-size: 120px; */
+    font-size: 8.3vw;
+    width: 100%;
+    color: white;
+}
+
+h2 {
+    font-family: neutralFaceBold;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+h3 {
+    font-family: 'Neutral Face', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    /* font-size: 3.47vw; */
+    width: 100%;
+    color: white;
+}
+
+h4 {
+    font-family: 'Neutral Face', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+h4.bold {
+    font-family: neutralFaceBold;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+h5 {
+    font-family: 'Neutral Face', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+p {
+    font-family: "neue-haas-unica", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* header stuff */
+
+.hr {
+    width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 20px;
+    position: fixed;
+    width: 100%;
+}
+
+#nav-title {
+    margin-right: auto;
+    padding: 20px 25px;
+    padding: 0.5vw 1.7vw;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 20px 25px;
+    display: inline-block;
+}
+
+header li {
+    list-style: none;
+    display: inline;
+}
+
+header a {
+    margin-left: auto;
+    text-decoration: none;
+    font-family: 'Neutral Face', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+hr.top {
+    padding-top: 5px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid white;
+    width: 95%;
+    background: none;
+    margin: 0 auto;
+    position: fixed;
+}
+
+hr.bottom {
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding-top: 5px;
+    border-top: 1px solid white;
+    width: 95%;
+    background: none;
+    margin: 0 auto;
+}
+
+
+.fixed-footer {
+    width: 100%;
+    position: fixed;
+    padding: 10px 0;
+    bottom: 0;
+}
+
+.fixed-header {
+    width: 100%;
+    position: fixed;
+    padding: 10px 0;
+    top: 0;
+}
+
+.fixed-footer .hr {
+    padding: 10px;
+    text-align: right;
+}
+
+
+
+/* first section */
+
+.bg {
+
+    background-image: url("testbg.png");
+    height: 100vh;
+    width: 100% !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: end;
+}
+
+.caption {
+    display: grid;
+    width: 100%;
+    color: #000;
+    align-items: end;
+    justify-content: start;
+    justify-items: start;
+    align-items: end;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 0;
+    margin: 0 30px;
+}
+
+.caption h1 {
+    width: 100%;
+}
+
+.caption h3 {
+    width: 100%;
+}
+
+.caption h4 {
+    width: 50%;
+}
+
+/* .typewriter h1{
+    overflow: hidden;
+    border-right: .1em solid white;
+    white-space: nowrap;
+    animation: typing 1s steps(20, end) forwards, blinking .8s infinite;
+    width: 0%;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blinking {
+    from { border-color: transparent }
+    to { border-color: white; }
+  } */
+
+
+/* second section, image grid  */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    justify-content: center;
+}
+
+.column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 10px;
+}
+
+.column img {
+    margin-top: 20px;
+    vertical-align: middle;
+    width: 100%;
+
+}
+
+figure h4.bold {
+    margin: 3px;
+    margin-top: 8px;
+}
+
+figure h4 {
+    margin: 3px;
+}
+
+.selected {
+    margin: 200px 0;
+}
+
+.selected h2 {
+    text-align: center;
+}
+
+.selected h3 {
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+
+/* third section */
+
+.downloads {
+    margin: 100px 130px 200px 130px;
+    /* margin: 200px 0; */
+}
+
+.downloads h2 {
+    text-align: center;
+}
+
+.downloads h4 {
+    padding-bottom: 25px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.file {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.file h4 {
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: auto;
+    width: 20%;
+    margin-bottom: auto;
+    justify-content: left;
+}
+
+.file h5 {
+    padding: 15px;
+    width: 60%;
+    margin: auto 0;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.file a {
+    /* text-decoration: none; */
+    color: white;
+}
+
+hr.download {
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding-top: 5px;
+    border-top: 1px solid white;
+    background: none;
+    margin: 0 auto;
+}
+
+
+
+/* about section */
+.about {
+    margin: 100px 130px 200px 130px;
+}
+
+.leftpar {
+    width: 30%;
+    margin: 20px auto 50px 0;
+    text-align: left;
+}
+
+.rightpar {
+    width: 30%;
+    margin: 50px 0 20px auto;
+    text-align: right;
+}
+
+/* contact section */
+
+.letstalk {
+    margin: 20px 35px;
+    padding-top: 60px;
+    height: 100vh;
+    display: grid;
+}
+
+.letstalk h3 {
+    width: 70%;
+}
+
+
+.message {
+    display: grid;
+    width: 33.33%;
+    align-items: end;
+    justify-content: start;
+    align-content: center;
+    justify-items: start;
+    margin: auto 0 0 0;
+    padding-bottom: 10px;
+}
+
+
+.socials {
+    display: flex;
+  justify-content: space-between;
+  width: 80%
+}
+
+.socials h4 {
+    display: inline;
+}
+
+.socials a{
+    text-decoration: underline;
+        color: white;
+}
+
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .file {
+        display: none;
+    }
+
+    hr.download {
+        display: none;
+    }
+
+    .about {
+        margin: 100px 20px;
+    }
+
+    .downloads {
+        margin: 200px 20px;
+    }
+
+    .downloads h2 {
+        font-size: 12vw;
+    }
+
+    .leftpar,
+    .rightpar {
+        width: 80%;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .caption {
+        margin: 0px;
+    }
+
+    .letstalk {
+        margin: 40px 20px;
+    }
+
+    .message {
+        width: 60%;
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+    #nav-title {
+        padding: 20px 0px;
+    }
+
+    nav a {
+        padding: 20px 15px;
+    }
+
+    .bg {
+        max-width: 100%;
+        max-height: 100vh;
+        align-items: center;
+    }
+
+    .caption {
+        padding: 20px 10px;
+
+    }
+
+    .caption h1 {
+        width: 100%;
+        font-size: 13.5vw;
+    }
+
+    .caption h3 {
+        width: 100%;
+        font-size: 6vw;
+    }
+
+    .letstalk h3 {
+        width: 100%;
+        font-size: 6vw;
+    }
+
+
+    .caption h4 {
+        width: 90%;
+    }
+
+    .letstalk h1 {
+        width: 100%;
+        font-size: 14vw;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    header a {
+        padding: 10px 0px;
+        font-size: 12px;
+    }
+
+    nav a {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    .letstalk {
+        padding-top: 100px;
+    }
+
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+
+}
