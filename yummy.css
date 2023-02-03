@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: neutralFaceBold;
-    src: url(neutralface-bold-webfont.woff);
+    src: url(fonts/neutralface-bold-webfont.woff);
 }
 
 * {
@@ -184,7 +184,7 @@ hr.bottom {
 
 .bg {
 
-    background-image: url("testbg.png");
+    background-image: url("images/testbg.png");
     height: 100vh;
     width: 100% !important;
     background-position: center;
@@ -498,7 +498,7 @@ hr.download {
 
 
 @media screen and (max-width: 500px) {
-    header a {
+     header a {
         padding: 10px 0px;
         font-size: 12px;
     }

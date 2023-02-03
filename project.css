@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: neutralFaceBold;
-    src: url(neutralface-bold-webfont.woff);
+    src: url(fonts/neutralface-bold-webfont.woff);
 }
 
 * {
@@ -242,6 +242,10 @@ li {
     .description {
         margin: 30px 20px;
         display: block;
+    }
+    
+    ul {
+        padding: 0;
     }
 
 }
