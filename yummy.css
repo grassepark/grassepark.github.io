@@ -16,7 +16,7 @@ body {
 }
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /* text */
@@ -89,6 +89,26 @@ p {
 a {
     text-decoration: none;
     color: white;
+    position: relative;
+}
+
+.file a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 1px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.file a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 /* header stuff */
@@ -247,16 +267,32 @@ hr.bottom {
 }
 
 .column {
+    margin-top: 20px;
     flex: 33%;
     max-width: 33%;
     padding: 0 10px;
 }
 
 .column img {
-    margin-top: 20px;
     vertical-align: middle;
     width: 100%;
+}
 
+.column figure{
+    margin-bottom:20px;
+}
+.zoom {
+    overflow: hidden;
+}
+
+.zoom img {
+    transition: transform .5s ease;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.zoom:hover img {
+    transform: scale(1.05);
 }
 
 figure h4.bold {
@@ -386,17 +422,17 @@ hr.download {
 
 .socials {
     display: flex;
-  justify-content: space-between;
-  width: 80%
+    justify-content: space-between;
+    width: 80%
 }
 
 .socials h4 {
     display: inline;
 }
 
-.socials a{
+.socials a {
     text-decoration: underline;
-        color: white;
+    color: white;
 }
 
 
@@ -498,7 +534,7 @@ hr.download {
 
 
 @media screen and (max-width: 500px) {
-     header a {
+    header a {
         padding: 10px 0px;
         font-size: 12px;
     }
