@@ -474,6 +474,20 @@ hr.download {
 }
 
 @media screen and (max-width: 800px) {
+    .selected h2{
+        padding: 0 10px;
+        font-size: 65px;
+        max-width: 100%;
+    }
+
+    .caption{
+        display: block;
+        max-width:100% 
+    }
+
+    .right{
+        display: none;
+    }
     .column {
         flex: 50%;
         max-width: 50%;
@@ -514,7 +528,7 @@ hr.download {
     }
 
     .letstalk {
-        margin: 40px 20px;
+        margin: 20px 20px;
     }
 
     .message {
@@ -589,7 +603,14 @@ hr.download {
     .column {
         flex: 100%;
         max-width: 100%;
+        padding: 0
     }
+
+    .leftpar,
+    .rightpar {
+        font-size: 20px;
+    }
+
 
 
 }
