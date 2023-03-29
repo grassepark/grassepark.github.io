@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: neutralFaceBold;
-    src: url(fonts/neutralface-bold-webfont.woff);
+    src: url(/fonts/neutralface-bold-webfont.woff);
 }
 
 * {
