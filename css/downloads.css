@@ -106,6 +106,7 @@ header {
     padding: 20px 20px;
     position: fixed;
     width: 100%;
+    z-index:99;
 }
 
 #nav-title {
@@ -165,6 +166,7 @@ hr.bottom {
     position: fixed;
     padding: 10px 0;
     bottom: 0;
+    z-index:99;
 }
 
 .fixed-header {
@@ -172,6 +174,7 @@ hr.bottom {
     position: fixed;
     padding: 10px 0;
     top: 0;
+    z-index:99;
 }
 
 .fixed-footer .hr {
@@ -326,21 +329,56 @@ img {
 }
 
 
-@media screen and (max-width: 800px) {
-    
-    ul {
-        padding: 0;
+@media screen and (max-width: 1000px) {
+    .file {
+        display: block;
+        max-width:100%;
+        margin: 100px 0 0;
+    }
+
+    .description { 
+        padding-top: 60px;
+        padding-bottom: 0px;
     }
 
 }
 
 @media screen and (max-width: 700px) {
+
+    ul {
+        padding: 0;
+    }
+
     #nav-title {
         padding: 20px 0px;
     }
 
     nav a {
         padding: 20px 15px;
+    }
+    .numbertext{
+        display:none;
+    }
+    .one{
+        padding:20px;
+    }
+    .downloads {
+        margin: 100px 20px;
+    }
+
+    .downloads h2 {
+        font-size: 12vw;
+    }
+
+    .file {
+        display: block;
+        max-width:100%;
+        margin: 100px 0 0;
+    }
+
+    .description { 
+        padding-top: 60px;
+        padding-bottom: 0px;
     }
 
 }
