@@ -7,9 +7,8 @@
     <title>Grace Park - Freelance Visual Designer</title>
     <link rel="icon" type="image/x-icon" href="images/icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="scripts/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
-
-<body>
 
     <!-- header -->
     <header>
@@ -21,36 +20,45 @@
                 <li><a href="#about">ABOUT</a></li>
             </ul>
         </nav>
+
     </header>
-    <div class="fixed-header">
-        <div class="hr">
-            <hr class="top">
+
+
+
+<body >
+
+        <!-- loading screen -->
+        <div id="preloader"></div>
+
+        <div class="fixed-header">
+            <div class="hr">
+                <hr class="top">
+            </div>
         </div>
-    </div>
-
-      <!-- footer -->
-
-      <div class="fixed-footer">
-        <div class="hr">
-            <h4><a href="#contact">contact me!</a></h4>
+    
+        <!-- footer -->
+    
+        <div class="fixed-footer">
+            <div class="hr">
+                <h4><a href="#contact">contact me!</a></h4>
+            </div>
+            <hr class="bottom">
         </div>
-        <hr class="bottom">
-    </div>
 
-
+        
 
     <!-- background -->
     <div id="home"></div>
     <div class="container">
         <div class="caption">
-           
+
             <div class="left">
-            <h3>2023 PORTFOLIO</h3>
+                <h3>2023 PORTFOLIO</h3>
                 <h1>GRACE PARK</h1>
-            <h4>A 20YR OLD designer currently studying at Parsons School of Design.
-                I love working with different digital mediums
-                and taking care of houseplants on the side.</h4>
-            <h4 class="bold"> CURRENTLY BASED IN NJ AND NYC</h4>
+                <h4>A 20YR OLD designer currently studying at Parsons School of Design.
+                    I love working with different digital mediums
+                    and taking care of houseplants on the side.</h4>
+                <h4 class="bold"> CURRENTLY BASED IN NJ AND NYC</h4>
             </div>
             <div class="right">
                 <img src="images/logo.png">
@@ -70,7 +78,7 @@
                 <!-- first photo -->
                 <figure>
                     <a href="project1.html">
-                        <div class=zoom><img src="images/piece1.png"></div>
+                        <div class=zoom class="bcg"><img src="images/piece1.png"></div>
                         <h4 class="bold">I'LLBYTE (2023) </h4>
                         <h4>Hackathon Submission</h4>
                     </a>
@@ -132,7 +140,9 @@
         </h4>
 
         <div class="downloadbutton">
-            <button onclick= "window.location.href='downloads.html';" class="button"><h6>DOWNLOAD PAGE -></h6></button>
+            <button onclick="window.location.href='downloads.html';" class="button">
+                <h6>DOWNLOAD PAGE -></h6>
+            </button>
         </div>
 
         <div class="file">
@@ -176,9 +186,11 @@
         <div class=HAAHAAA>
             <h1> LET'S CHAT! </h1>
             <h3> If you're working on a cool project, be in touch!</h3>
-            <button onclick= "window.location.href='mailto: grassepark@gmail.com';" class="button"><h6>SEND AN EMAIL</h6></button>
+            <button onclick="window.location.href='mailto: grassepark@gmail.com';" class="button">
+                <h6>SEND AN EMAIL</h6>
+            </button>
         </div>
-    
+
         <div id="contact"></div>
 
         <div class="message">
@@ -196,9 +208,15 @@
 
     </section>
 
-    <script src="/scripts/gallery.js"></script>
+
+
+
+<script src="scripts/main.js"></script>
+
+
 
 
 </body>
+
 
 </html>
