@@ -70,6 +70,29 @@ h4.bold {
     display: inline;
 }
 
+.quote {
+    padding: 40px 20px;
+    font-family: "neue-haas-unica", sans-serif;
+    line-height: 26pt;
+    font-size: 30px;
+    color: white;
+    padding: 40px 20px;
+}
+
+
+  .numbered {
+    font-family: "neue-haas-unica", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
+    color: white;
+  }
+
+  ol { 
+    padding: 20px;
+  }
+
+
 h5 {
     font-family: 'Neutral Face', sans-serif;
     font-weight: 400;
@@ -79,12 +102,44 @@ h5 {
     color: white;
 }
 
+button h6{
+margin:10px 0;
+    font-family: 'Neutral Face', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(90deg, #48cfa7, #99ff99);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+h6 {
+    font-family: neutralFaceBold;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
+    text-align:center;
+    margin: 0 auto 10px;
+}
+
 p {
     font-family: "neue-haas-unica", sans-serif;
     font-weight: 200;
     font-style: normal;
     font-size: 16px;
     color: white;
+}
+
+figcaption {
+    font-family: "neue-haas-unica", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    color: white;
+    text-align:center;
 }
 
 a {
@@ -224,12 +279,13 @@ hr.bottom {
     text-align: left;
 }
 
-li {
+.blank  {
     list-style: none;
     display: inline;
-}
+} 
 
 .two ul {
+    gap:15px;
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -269,6 +325,13 @@ li {
     max-height: 100%;
 }
 
+.roundedimg {
+    border-radius:30px;
+    max-width: 100%;
+    max-height: 100%;
+    margin:20px;
+}
+
 .four video {
     max-width: 100%;
     max-height: 100%;
@@ -278,6 +341,31 @@ li {
     aspect-ratio: 16 / 9;
     width: 100%;
   }
+
+.spacing {
+    padding: 60px 0 70px;
+}
+
+
+button.button {
+    border-radius: 100rem;
+    margin:20px 0;
+    padding: .8rem 3.5rem;
+    color: transparent;
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(90deg, #48cfa7, #99ff99);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #161916 inset;
+  }
+
+.centered {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 @media screen and (max-width: 800px) {
 
@@ -325,6 +413,13 @@ li {
     nav a {
         padding: 10px 10px;
         font-size: 12px;
+    }
+    .roundedimg {
+        margin:0px;
+    }
+
+    .figmaPrototype {
+        display:none !important;
     }
 
 }

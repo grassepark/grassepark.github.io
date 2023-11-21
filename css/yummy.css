@@ -12,7 +12,8 @@
 }
 
 body {
-    background-color: #161916;
+        background-color: #161916;
+
 }
 
 html {
@@ -114,7 +115,7 @@ a {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
     position: fixed;
@@ -141,7 +142,7 @@ header li {
     display: inline;
 }
 
-header a {
+.headerLink {
     margin-left: auto;
     text-decoration: none;
     font-family: 'Neutral Face', sans-serif;
@@ -241,6 +242,12 @@ hr.bottom {
     justify-self:start;
     padding: 1vw;
 }
+
+.icon{
+    width: 50px;
+    margin: 1vh 2vw;
+}
+
 
 .right img{
     width: 100%;
@@ -706,7 +713,7 @@ button.button {
         padding: 15px 10px;
     }
 
-    header a {
+    .headerLink {
         padding: 10px 0px;
         font-size: 12px;
     }
