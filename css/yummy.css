@@ -123,6 +123,7 @@ header {
     z-index:99;
     background-color: rgba(0,0,0,0); 
     background-image: linear-gradient(rgba(22,25,22,0.8), rgba(22,25,22,0));
+    z-index: 999;
 }
 
 #nav-title {
@@ -241,6 +242,7 @@ hr.bottom {
     align-self:start;
     justify-self:start;
     padding: 1vw;
+    z-index: 0;
 }
 
 .icon{
@@ -251,6 +253,7 @@ hr.bottom {
 
 .right img{
     width: 100%;
+
 }
 
 .caption h1 {
