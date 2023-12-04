@@ -344,8 +344,9 @@ padding: 30px 0;
 @media screen and (max-width: 500px) {
 
     #preloader{
-        background-size: 20%; /* size of the gif, make it responsive! */
-    
+       
+        background-size: 40%;
+      
     }
 
     header a {
@@ -358,5 +359,7 @@ padding: 30px 0;
         padding: 10px 10px;
         font-size: 12px;
     }
+
+    
 
 }

@@ -97,7 +97,7 @@ a {
 
 #preloader{
     background: #161916 url(/images/loading.gif) no-repeat center center;
-    background-size: 10%; /* size of the gif, make it responsive! */
+    background-size: 17%; /* size of the gif, make it responsive! */
     height: 100vh;
     width: 100%;
     opacity: 1;
@@ -700,8 +700,9 @@ button.button {
 @media screen and (max-width: 500px) {
 
     #preloader{
-        background-size: 20%; /* size of the gif, make it responsive! */
-    
+       
+        background-size: 40%;
+      
     }
     .container {
 
@@ -772,5 +773,6 @@ button.button {
     .altsocials a{
         text-decoration:underline;
     }
+
 
 }

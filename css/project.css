@@ -462,10 +462,10 @@ button.vellumButton {
 
 
 
-    #preloader {
-        background-size: 20%;
-        /* size of the gif, make it responsive! */
-
+    #preloader{
+       
+        background-size: 40%;
+      
     }
 
     header a {
